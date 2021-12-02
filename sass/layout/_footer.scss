@@ -1,6 +1,26 @@
-.footer {
-    background: $color-dark-gray;
-    width: 100%;
-    text-decoration: none;
-    color: $color-white;
+footer {
+    background-color: $dark-gray;
+    padding: 2rem;
+    
+    ul {
+        padding-top: 1.3rem;
+    }
+
+    i {
+        color: $white;
+    }
+
+    li {
+        padding-top: 0.7rem;
+    }
+    .submit {
+        margin-left: 0.8rem;
+    }
+    .partnership {
+        margin-left: 0.4rem;
+    }
+
+    
+
+
 }

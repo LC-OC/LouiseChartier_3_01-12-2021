@@ -1,8 +1,46 @@
-.footer {
-  background: #313030;
-  width: 100%;
-  text-decoration: none;
+/* Color */
+/* Font */
+/* Media Size */
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+footer h2 {
+  font-family: "Shrikhand", cursive;
   color: #ffffff;
+  font-size: 1.2rem;
+}
+footer a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1rem;
+}
+footer .bold-font {
+  font-weight: bold;
+}
+
+footer {
+  background-color: #313030;
+  padding: 2rem;
+}
+footer ul {
+  padding-top: 1.3rem;
+}
+footer i {
+  color: #ffffff;
+}
+footer li {
+  padding-top: 0.7rem;
+}
+footer .submit {
+  margin-left: 0.8rem;
+}
+footer .partnership {
+  margin-left: 0.4rem;
+}
+
+img {
+  width: 200px;
 }
 
 /*# sourceMappingURL=style.css.map */
