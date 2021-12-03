@@ -1,0 +1,28 @@
+#search_bar {
+    background-color: $clear-gray;
+    width: 100%;
+        form {
+            margin-top: 0.1rem;
+            padding: 1rem 0;
+            display: flex;
+            justify-content: center;
+        }
+        .icon-map {
+            color: $dark-gray;
+        }
+        input {
+            background: $clear-gray;
+            width: 39%;
+            border: none;
+            font-weight: bold;
+            margin-left: 1rem;
+            font-size: 1rem;
+            text-overflow: ellipsis;
+            &:focus {
+                outline: none;
+            }
+        }
+        ::placeholder {
+            color: $dark-gray;
+        }
+}

@@ -23,8 +23,7 @@ footer .bold-font {
 .index-header {
   background-color: #ffffff;
   padding: 1.5rem 0 1rem 0;
-  margin-bottom: 1rem;
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 1px 9px rgba(0, 0, 0, 0.4);
 }
 .index-header .logo {
   display: block;
@@ -36,7 +35,6 @@ footer .bold-font {
 .header-with-icon {
   background-color: #ffffff;
   padding: 1.5rem 0 1rem 0;
-  margin-bottom: 1rem;
   display: flex;
 }
 .header-with-icon .logo-link {
@@ -53,6 +51,35 @@ footer .bold-font {
 .header-with-icon .icon-back {
   font-size: 1.3rem;
   text-decoration: none;
+  color: #313030;
+}
+
+#search_bar {
+  background-color: #ebe8e8;
+  width: 100%;
+}
+#search_bar form {
+  margin-top: 0.1rem;
+  padding: 1rem 0;
+  display: flex;
+  justify-content: center;
+}
+#search_bar .icon-map {
+  color: #313030;
+}
+#search_bar input {
+  background: #ebe8e8;
+  width: 39%;
+  border: none;
+  font-weight: bold;
+  margin-left: 1rem;
+  font-size: 1rem;
+  text-overflow: ellipsis;
+}
+#search_bar input:focus {
+  outline: none;
+}
+#search_bar ::placeholder {
   color: #313030;
 }
 
