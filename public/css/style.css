@@ -19,6 +19,43 @@ footer .bold-font {
   font-weight: bold;
 }
 
+/* Logo */
+.index-header {
+  background-color: #ffffff;
+  padding: 1.5rem 0 1rem 0;
+  margin-bottom: 1rem;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
+}
+.index-header .logo {
+  display: block;
+  margin: auto;
+  width: 11rem;
+}
+
+/* Header other pages */
+.header-with-icon {
+  background-color: #ffffff;
+  padding: 1.5rem 0 1rem 0;
+  margin-bottom: 1rem;
+  display: flex;
+}
+.header-with-icon .logo-link {
+  margin: auto;
+}
+.header-with-icon .logo {
+  width: 11rem;
+}
+.header-with-icon .go-back {
+  position: absolute;
+  margin-left: 2rem;
+  margin-top: 0.2rem;
+}
+.header-with-icon .icon-back {
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: #313030;
+}
+
 footer {
   background-color: #313030;
   padding: 2rem;

@@ -1,0 +1,35 @@
+/* Logo */
+.index-header {
+    @include header;
+    box-shadow: $box-shadow;
+    .logo {
+        display: block;
+        margin: auto;
+        width: 11rem;
+    }
+}
+
+
+/* Header other pages */
+
+.header-with-icon {
+    @include header;
+    display: flex;
+    .logo-link {
+        margin: auto;
+    }
+    .logo {
+        width: 11rem;
+    }
+    .go-back {
+        position: absolute;
+        margin-left: 2rem;
+        margin-top: 0.2rem;
+
+    }
+    .icon-back { 
+        font-size: 1.3rem;
+        text-decoration: none;
+        color: $dark-gray;
+    }
+}
