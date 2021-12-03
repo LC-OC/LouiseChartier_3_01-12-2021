@@ -3,9 +3,13 @@
 
 @import "./base/typography";
 
+@import "./components/buttons";
+
 @import "./layout/header";
 @import "./layout/form";
 @import "./layout/footer";
+
+@import "./pages/index";
 
 
 img {

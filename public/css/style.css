@@ -19,6 +19,36 @@ footer .bold-font {
   font-weight: bold;
 }
 
+#title_explore h1 {
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+#title_explore p {
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+.explore-button {
+  background: linear-gradient(2deg, #9356dc 1%, #ff79da 90%);
+  border: none;
+  border-radius: 1.7rem;
+  font-size: 1rem;
+  color: #ffffff;
+  box-shadow: 0 1px 9px rgba(0, 0, 0, 0.4);
+  padding: 1.1rem 1.6rem;
+  margin: 2rem;
+}
+
+.order-button {
+  background: linear-gradient(2deg, #9356dc 1%, #ff79da 90%);
+  border: none;
+  border-radius: 1.7rem;
+  font-size: 1rem;
+  color: #ffffff;
+  box-shadow: 0 1px 9px rgba(0, 0, 0, 0.4);
+  padding: 1rem 3rem;
+}
+
 /* Logo */
 .index-header {
   background-color: #ffffff;
@@ -101,6 +131,18 @@ footer .submit {
 }
 footer .partnership {
   margin-left: 0.4rem;
+}
+
+#title_explore {
+  background-color: #fcf8f8;
+  text-align: center;
+  padding: 1rem 2rem;
+}
+#title_explore h1 {
+  margin: 1rem;
+}
+#title_explore p {
+  color: #313030;
 }
 
 img {

@@ -1,0 +1,11 @@
+
+.explore-button {
+    @include gradient-button;
+    padding: 1.1rem 1.6rem;
+    margin: 2rem;
+}
+
+.order-button {
+    @include gradient-button;
+    padding: 1rem 3rem;
+}
