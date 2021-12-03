@@ -1,4 +1,4 @@
-
+/* Gradient-background button*/
 .explore-button {
     @include gradient-button;
     padding: 1.1rem 1.6rem;
@@ -8,4 +8,18 @@
 .order-button {
     @include gradient-button;
     padding: 1rem 3rem;
+}
+
+.using-button {
+    border: none;
+    padding: 1.2rem 2rem;
+    margin: 0.8rem;
+    border-radius: 1.1rem;
+    box-shadow: $box-shadow;
+    &:active {
+        background-color: $soft-purple;
+        i {
+            color: $color-primary;
+        }
+    }
 }

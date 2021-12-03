@@ -1,6 +1,7 @@
 /* Color */
 /* Font */
 /* Media Size */
+/* @mixin order-button */
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -28,13 +29,22 @@ footer .bold-font {
   font-weight: 400;
 }
 
+#using_app h2 {
+  font-size: 1.3rem;
+  font-weight: bolder;
+}
+#using_app button {
+  font-weight: bold;
+}
+
+/* Gradient-background button*/
 .explore-button {
   background: linear-gradient(2deg, #9356dc 1%, #ff79da 90%);
   border: none;
   border-radius: 1.7rem;
   font-size: 1rem;
   color: #ffffff;
-  box-shadow: 0 1px 9px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
   padding: 1.1rem 1.6rem;
   margin: 2rem;
 }
@@ -45,15 +55,29 @@ footer .bold-font {
   border-radius: 1.7rem;
   font-size: 1rem;
   color: #ffffff;
-  box-shadow: 0 1px 9px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
   padding: 1rem 3rem;
+}
+
+.using-button {
+  border: none;
+  padding: 1.2rem 2rem;
+  margin: 0.8rem;
+  border-radius: 1.1rem;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+}
+.using-button:active {
+  background-color: #e9dbfd;
+}
+.using-button:active i {
+  color: #9356DC;
 }
 
 /* Logo */
 .index-header {
   background-color: #ffffff;
   padding: 1.5rem 0 1rem 0;
-  box-shadow: 0 1px 9px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
 }
 .index-header .logo {
   display: block;
@@ -143,6 +167,27 @@ footer .partnership {
 }
 #title_explore p {
   color: #313030;
+}
+
+#using_app {
+  padding: 3rem 1rem;
+}
+#using_app #using-button-block {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+}
+#using_app .using-icon {
+  font-size: 1.1rem;
+  padding-right: 1.5rem;
+  color: #313030;
+}
+#using_app .icon-compose {
+  padding-right: 1.5rem;
+  color: #313030;
+}
+#using_app .icon-ellipsis {
+  font-size: 0.8rem;
 }
 
 img {
