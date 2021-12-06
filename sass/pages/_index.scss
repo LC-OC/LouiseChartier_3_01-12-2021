@@ -2,37 +2,85 @@
     background-color: $clear-gray;
     text-align: center;
     padding: 1rem 2rem;
-    h1 {
-        margin: 1rem;
-    }
-    p {
-        color: $dark-gray;
-    }
+        h1 {
+            margin: 1rem;
+        }
+        p {
+            color: $dark-gray;
+        }
 }
 
 #using_app {
     padding: 3rem 1rem;
-    #using-button-block {
-        display: flex;
-        flex-direction: column;
-        padding: 1.5rem 0.5rem;
-    }
-    #number-one-using-button {
-        margin-top: 1.8rem;
-        @include number-using-button;
-    }
-    #number-two-using-button {
-        @include number-using-button;
-        margin-top: 7rem;
-    }
-    #number-three-using-button {
-        @include number-using-button;
-        margin-top: 12rem;
-    }
+        #using-button-block {
+            display: flex;
+            flex-direction: column;
+            padding: 1.5rem 0.5rem;
+        }
+        #number-one-using-button {
+            margin-top: 1.8rem;
+            @include number-using-button;
+        }
+        #number-two-using-button {
+            @include number-using-button;
+            margin-top: 7rem;
+        }
+        #number-three-using-button {
+            @include number-using-button;
+            margin-top: 12rem;
+        }
 
 }
 
 #figures-index {
     background-color: $clear-gray;
-    padding: 3rem 1rem;
+    padding: 3rem 0.9rem;
+    display: flex;
+    flex-direction: column;
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        .figures-restaurants {
+            background-color: $white;
+            margin: 1rem;
+            padding-bottom: 6rem;
+            border-radius: 10px;
+            width: 20rem;
+            height: 9rem;
+            box-shadow: 0 3px 10px rgb(184, 183, 183);
+                .img-restaurant {
+                    width: 20rem;
+                    height: 10rem;
+                    border-radius:  10px 10px 0 0;
+                    object-fit: cover;
+                    object-position: right bottom;
+                }
+                .img-note-enchantee {
+                    object-position: 50% 61%;
+                }
+                figcaption {
+                    padding: 1rem;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items:flex-star;
+                    h3 {
+                        padding-bottom: 0.5rem;
+                    }
+                    .heart-icon {
+                        font-size: 1.5rem;
+                        color: $gray-icon
+                }
+        }
+    }    
+    .new {
+        position: absolute;
+        background-color: $color-tertiary;
+        padding: 0.5rem 0.8rem;
+        margin-left: 14.5rem;
+        margin-top: 0.8rem;
+        }
+
+        
 }

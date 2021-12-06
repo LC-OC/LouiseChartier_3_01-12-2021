@@ -44,4 +44,19 @@ footer {
         font-size: 1.3rem;
         font-weight: bolder;
     }
+    h3 {
+        font-weight: bolder;
+    }
+    .new p {
+        font-size: 0.8rem;
+        font-weight: bold;
+        color: $green;
+    } 
+}
+
+#menu {
+    h1 {
+       font-family: $title-logo-font;
+       font-size: 1.5rem; 
+    }
 }
