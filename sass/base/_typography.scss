@@ -59,4 +59,21 @@ footer {
        font-family: $title-logo-font;
        font-size: 1.5rem; 
     }
+    h2 {
+        font-size: 1rem;
+        text-transform: uppercase;
+        font-weight: 400;
+    }
+    h3 {
+        font-size: 1rem;
+        font-weight: bold;
+    }
+    p {
+        font-size: 0.9rem;
+    }
+    .price {
+        font-weight: bold;
+        color: $dark-gray;
+        font-size: 0.9rem;
+    }
 }
