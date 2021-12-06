@@ -11,14 +11,20 @@
 }
 
 .using-button {
+    background-color: $clear-gray;
     border: none;
-    padding: 1.2rem 2rem;
+    padding: 1.2rem 4rem 1.2rem 2rem;
     margin: 0.8rem;
     border-radius: 1.1rem;
     box-shadow: $box-shadow;
+    .using-icon {
+        font-size: 1.1rem;
+        padding-right: 1.5rem;
+        color: $gray-icon;
+    }
     &:active {
         background-color: $soft-purple;
-        i {
+        .using-icon {
             color: $color-primary;
         }
     }

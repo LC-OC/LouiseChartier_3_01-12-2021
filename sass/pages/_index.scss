@@ -6,30 +6,33 @@
         margin: 1rem;
     }
     p {
-        
         color: $dark-gray;
     }
 }
-
 
 #using_app {
     padding: 3rem 1rem;
     #using-button-block {
         display: flex;
         flex-direction: column;
-        padding: 1.5rem;
+        padding: 1.5rem 0.5rem;
     }
-    .using-icon {
-        font-size: 1.1rem;
-        padding-right: 1.5rem;
-        color: $dark-gray;
+    #number-one-using-button {
+        margin-top: 1.8rem;
+        @include number-using-button;
     }
-    .icon-compose {
-        padding-right: 1.5rem;
-        color: $dark-gray;
+    #number-two-using-button {
+        @include number-using-button;
+        margin-top: 7rem;
     }
-    .icon-ellipsis {
-        font-size: 0.8rem;
+    #number-three-using-button {
+        @include number-using-button;
+        margin-top: 12rem;
     }
 
+}
+
+#figures-index {
+    background-color: $clear-gray;
+    padding: 3rem 1rem;
 }

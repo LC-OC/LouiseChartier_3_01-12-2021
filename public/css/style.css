@@ -1,7 +1,6 @@
 /* Color */
 /* Font */
 /* Media Size */
-/* @mixin order-button */
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -37,6 +36,11 @@ footer .bold-font {
   font-weight: bold;
 }
 
+#figures-index h2 {
+  font-size: 1.3rem;
+  font-weight: bolder;
+}
+
 /* Gradient-background button*/
 .explore-button {
   background: linear-gradient(2deg, #9356dc 1%, #ff79da 90%);
@@ -60,16 +64,22 @@ footer .bold-font {
 }
 
 .using-button {
+  background-color: #fcf8f8;
   border: none;
-  padding: 1.2rem 2rem;
+  padding: 1.2rem 4rem 1.2rem 2rem;
   margin: 0.8rem;
   border-radius: 1.1rem;
   box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
 }
+.using-button .using-icon {
+  font-size: 1.1rem;
+  padding-right: 1.5rem;
+  color: #818181;
+}
 .using-button:active {
   background-color: #e9dbfd;
 }
-.using-button:active i {
+.using-button:active .using-icon {
   color: #9356DC;
 }
 
@@ -175,19 +185,48 @@ footer .partnership {
 #using_app #using-button-block {
   display: flex;
   flex-direction: column;
-  padding: 1.5rem;
+  padding: 1.5rem 0.5rem;
 }
-#using_app .using-icon {
-  font-size: 1.1rem;
-  padding-right: 1.5rem;
-  color: #313030;
-}
-#using_app .icon-compose {
-  padding-right: 1.5rem;
-  color: #313030;
-}
-#using_app .icon-ellipsis {
+#using_app #number-one-using-button {
+  margin-top: 1.8rem;
+  position: absolute;
+  background-color: #9356DC;
+  width: 0.7rem;
+  height: 0.7rem;
+  color: #ffffff;
   font-size: 0.8rem;
+  text-align: center;
+  border-radius: 50%;
+  padding: 0.4rem;
+}
+#using_app #number-two-using-button {
+  position: absolute;
+  background-color: #9356DC;
+  width: 0.7rem;
+  height: 0.7rem;
+  color: #ffffff;
+  font-size: 0.8rem;
+  text-align: center;
+  border-radius: 50%;
+  padding: 0.4rem;
+  margin-top: 7rem;
+}
+#using_app #number-three-using-button {
+  position: absolute;
+  background-color: #9356DC;
+  width: 0.7rem;
+  height: 0.7rem;
+  color: #ffffff;
+  font-size: 0.8rem;
+  text-align: center;
+  border-radius: 50%;
+  padding: 0.4rem;
+  margin-top: 12rem;
+}
+
+#figures-index {
+  background-color: #fcf8f8;
+  padding: 3rem 1rem;
 }
 
 img {
