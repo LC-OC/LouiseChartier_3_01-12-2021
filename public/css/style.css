@@ -71,6 +71,14 @@ footer .bold-font {
   font-size: 0.9rem;
 }
 
+.text-zone-mentions-legales h1 {
+  font-size: 1.3rem;
+  font-weight: bolder;
+}
+.text-zone-mentions-legales p {
+  font-size: 0.9rem;
+}
+
 /* Gradient-background button*/
 .explore-button {
   background: linear-gradient(2deg, #9356dc 1%, #ff79da 90%);
@@ -156,6 +164,10 @@ footer .bold-font {
   font-size: 1.3rem;
   text-decoration: none;
   color: #313030;
+}
+
+.header-mentions-legales {
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
 }
 
 #search_bar {
@@ -379,6 +391,18 @@ footer .partnership {
   display: flex;
   justify-content: center;
   margin-bottom: 5rem;
+}
+
+.text-zone-mentions-legales {
+  margin-top: 0.1rem;
+  background-color: #ebe8e8;
+  padding: 2rem 1rem;
+}
+.text-zone-mentions-legales h1 {
+  margin-bottom: 1.5rem;
+}
+.text-zone-mentions-legales p {
+  margin-bottom: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */
