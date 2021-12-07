@@ -366,6 +366,13 @@ footer .partnership {
   flex-direction: row;
   justify-content: space-between;
   padding-top: 0.5rem;
+  width: 100%;
+}
+.menu_items .food-infos {
+  width: 90%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 #button_order-section {

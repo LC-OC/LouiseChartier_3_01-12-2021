@@ -49,6 +49,14 @@
             flex-direction: row;
             justify-content: space-between;
             padding-top: 0.5rem;
+            width: 100%;
+        }
+        .food-infos {
+            width: 90%;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            
         }
 }
 
