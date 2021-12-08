@@ -32,6 +32,12 @@ footer .bold-font {
   font-size: 1.3rem;
   font-weight: bolder;
 }
+@media screen and (min-width: 992px) {
+  .using_app h2 {
+    text-align: center;
+    font: 1.5rem;
+  }
+}
 .using_app button {
   font-weight: bold;
 }
@@ -39,6 +45,12 @@ footer .bold-font {
 .figures-index h2 {
   font-size: 1.3rem;
   font-weight: bolder;
+}
+@media screen and (min-width: 992px) {
+  .figures-index h2 {
+    text-align: center;
+    font: 1.5rem;
+  }
 }
 .figures-index h3 {
   font-weight: bolder;
@@ -93,6 +105,12 @@ footer .bold-font {
   text-decoration: none;
   color: inherit;
 }
+@media screen and (min-width: 992px) {
+  .explore-button {
+    width: 20%;
+    margin: 2rem auto;
+  }
+}
 
 .order-button {
   background: linear-gradient(2deg, #9356dc 1%, #ff79da 90%);
@@ -112,6 +130,11 @@ footer .bold-font {
   border-radius: 1.1rem;
   box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
 }
+@media screen and (min-width: 992px) {
+  .using-button {
+    margin: 1.5rem;
+  }
+}
 .using-button .using-icon {
   font-size: 1.1rem;
   padding-right: 1.5rem;
@@ -122,6 +145,14 @@ footer .bold-font {
 }
 .using-button:active .using-icon {
   color: #9356DC;
+}
+@media screen and (min-width: 992px) {
+  .using-button:hover {
+    background-color: #e9dbfd;
+  }
+  .using-button:hover .using-icon {
+    color: #9356DC;
+  }
 }
 
 .order-button {
@@ -138,6 +169,11 @@ footer .bold-font {
   background-color: #ffffff;
   padding: 1.5rem 0 1rem 0;
   box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+}
+@media screen and (min-width: 992px) {
+  .index-header {
+    height: 3rem;
+  }
 }
 .index-header .logo {
   display: block;
@@ -197,6 +233,11 @@ footer .bold-font {
 .search_bar input:focus {
   outline: none;
 }
+@media screen and (min-width: 992px) {
+  .search_bar input {
+    width: 10%;
+  }
+}
 .search_bar ::placeholder {
   color: #313030;
 }
@@ -207,6 +248,13 @@ footer {
 }
 footer ul {
   padding-top: 1.3rem;
+}
+@media screen and (min-width: 992px) {
+  footer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }
 footer i {
   color: #ffffff;
@@ -241,6 +289,12 @@ footer .partnership {
   flex-direction: column;
   padding: 1.5rem 0.5rem;
 }
+@media screen and (min-width: 992px) {
+  .using_app .using-button-block {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
 .using_app .number-one-using-button {
   margin-top: 1.8rem;
   position: absolute;
@@ -252,6 +306,12 @@ footer .partnership {
   text-align: center;
   border-radius: 50%;
   padding: 0.4rem;
+}
+@media screen and (min-width: 992px) {
+  .using_app .number-one-using-button {
+    margin-top: 2.6rem;
+    margin-right: 60rem;
+  }
 }
 .using_app .number-two-using-button {
   position: absolute;
@@ -265,6 +325,12 @@ footer .partnership {
   padding: 0.4rem;
   margin-top: 7rem;
 }
+@media screen and (min-width: 992px) {
+  .using_app .number-two-using-button {
+    margin-top: 2.6rem;
+    margin-right: 17.5rem;
+  }
+}
 .using_app .number-three-using-button {
   position: absolute;
   background-color: #9356DC;
@@ -277,18 +343,34 @@ footer .partnership {
   padding: 0.4rem;
   margin-top: 12.4rem;
 }
+@media screen and (min-width: 992px) {
+  .using_app .number-three-using-button {
+    margin-top: 2.6rem;
+    margin-right: -23.5rem;
+  }
+}
 
 .figures-index {
   background-color: #fcf8f8;
   padding: 3rem 0.9rem;
+}
+.figures-index .zone-figures-index {
   display: flex;
   flex-direction: column;
 }
-.figures-index a {
+@media screen and (min-width: 992px) {
+  .figures-index .zone-figures-index {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+  }
+}
+.figures-index .zone-figures-index a {
   text-decoration: none;
   color: inherit;
 }
-.figures-index .figures-restaurants {
+.figures-index .zone-figures-index .figures-restaurants {
   background-color: #ffffff;
   margin: 1rem;
   padding-bottom: 6rem;
@@ -297,27 +379,40 @@ footer .partnership {
   height: 9rem;
   box-shadow: 0 3px 10px #b8b7b7;
 }
-.figures-index .figures-restaurants .img-restaurant {
+@media screen and (min-width: 992px) {
+  .figures-index .zone-figures-index .figures-restaurants {
+    width: 25rem;
+    height: 9rem;
+    margin: 2rem;
+  }
+}
+.figures-index .zone-figures-index .figures-restaurants .img-restaurant {
   width: 20rem;
   height: 10rem;
   border-radius: 10px 10px 0 0;
   object-fit: cover;
   object-position: right bottom;
 }
-.figures-index .figures-restaurants .img-note-enchantee {
+@media screen and (min-width: 992px) {
+  .figures-index .zone-figures-index .figures-restaurants .img-restaurant {
+    width: 25rem;
+    object-position: center;
+  }
+}
+.figures-index .zone-figures-index .figures-restaurants .img-note-enchantee {
   object-position: 50% 61%;
 }
-.figures-index .figures-restaurants figcaption {
+.figures-index .zone-figures-index .figures-restaurants figcaption {
   padding: 1rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-star;
 }
-.figures-index .figures-restaurants figcaption h3 {
+.figures-index .zone-figures-index .figures-restaurants figcaption h3 {
   padding-bottom: 0.5rem;
 }
-.figures-index .figures-restaurants figcaption .heart-icon {
+.figures-index .zone-figures-index .figures-restaurants figcaption .heart-icon {
   font-size: 1.5rem;
   color: #818181;
 }
@@ -327,6 +422,11 @@ footer .partnership {
   padding: 0.5rem 0.8rem;
   margin-left: 14.5rem;
   margin-top: 0.8rem;
+}
+@media screen and (min-width: 992px) {
+  .figures-index .new {
+    margin-left: 19.5rem;
+  }
 }
 
 .image-background {

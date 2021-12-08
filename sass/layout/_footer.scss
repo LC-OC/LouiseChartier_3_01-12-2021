@@ -1,9 +1,13 @@
 footer {
     background-color: $dark-gray;
     padding: 2rem;
-    
     ul {
         padding-top: 1.3rem;
+        @media #{$desktop} {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
     }
 
     i {

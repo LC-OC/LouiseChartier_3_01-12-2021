@@ -16,18 +16,34 @@
             display: flex;
             flex-direction: column;
             padding: 1.5rem 0.5rem;
+            @media #{$desktop} {
+                flex-direction: row;
+                justify-content: center;
+            }
         }
         .number-one-using-button {
             margin-top: 1.8rem;
             @include number-using-button;
+            @media #{$desktop} {
+                margin-top: 2.6rem;
+                margin-right: 60rem;
+            }
         }
         .number-two-using-button {
             @include number-using-button;
             margin-top: 7rem;
+            @media #{$desktop} {
+                margin-top: 2.6rem;
+                margin-right: 17.5rem;
+            }
         }
         .number-three-using-button {
             @include number-using-button;
             margin-top: 12.4rem;
+            @media #{$desktop} {
+                margin-top: 2.6rem;
+                margin-right: -23.5rem;
+            }
         }
 
 }
@@ -35,8 +51,15 @@
 .figures-index {
     background-color: $clear-gray;
     padding: 3rem 0.9rem;
+    .zone-figures-index {
     display: flex;
     flex-direction: column;
+        @media #{$desktop} {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: center;
+        }
         a {
             text-decoration: none;
             color: inherit;
@@ -49,12 +72,21 @@
             width: 20rem;
             height: 9rem;
             box-shadow: 0 3px 10px rgb(184, 183, 183);
+            @media #{$desktop} {
+                width: 25rem;
+                height: 9rem;
+                margin: 2rem;
+            }
                 .img-restaurant {
                     width: 20rem;
                     height: 10rem;
                     border-radius:  10px 10px 0 0;
                     object-fit: cover;
                     object-position: right bottom;
+                    @media #{$desktop} {
+                        width: 25rem;
+                        object-position: center;
+                    }
                 }
                 .img-note-enchantee {
                     object-position: 50% 61%;
@@ -74,12 +106,16 @@
                 }
         }
     }    
+    }
     .new {
         position: absolute;
         background-color: $color-tertiary;
         padding: 0.5rem 0.8rem;
         margin-left: 14.5rem;
         margin-top: 0.8rem;
+        @media #{$desktop} {
+            margin-left: 19.5rem;
+        }
         }
 
         

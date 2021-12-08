@@ -33,6 +33,10 @@ footer {
     h2 {
         font-size: 1.3rem;
         font-weight: bolder;
+        @media #{$desktop} {
+            text-align: center;
+            font: 1.5rem;
+        }
     }
     button {
         font-weight: bold;
@@ -43,6 +47,10 @@ footer {
     h2 {
         font-size: 1.3rem;
         font-weight: bolder;
+        @media #{$desktop} {
+            text-align: center;
+            font: 1.5rem;
+        }
     }
     h3 {
         font-weight: bolder;

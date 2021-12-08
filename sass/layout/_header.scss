@@ -2,6 +2,9 @@
 .index-header {
     @include header;
     box-shadow: $box-shadow;
+    @media #{$desktop} {
+        height: 3rem;
+    }
     .logo {
         display: block;
         margin: auto;
