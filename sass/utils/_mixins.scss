@@ -5,7 +5,6 @@
 
 @mixin gradient-button {
     background: linear-gradient(2deg, rgba(147,86,220,1) 1%, rgba(255,121,218,1) 90%);
-    border: none;
     border-radius: 1.7rem;
     font-size: 1rem;
     color: $white;
