@@ -66,6 +66,9 @@ footer {
     h1 {
        font-family: $title-logo-font;
        font-size: 1.5rem; 
+       @media #{$desktop} {
+            font-size: 2rem;
+       }
     }
     h2 {
         font-size: 1rem;
