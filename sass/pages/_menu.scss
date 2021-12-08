@@ -1,20 +1,20 @@
-#image-background {
+.image-background {
     width: 100%;
     height: 13rem;
-        #background-img {
+        .background-img {
             width: 100%;
             object-fit: cover;
         }
 }
 
-#menu {
+.menu {
     background-color: $clear-gray;
     position:relative;
     border-radius: 2rem 2rem 0 0;
     padding: 2rem 1.5rem;
 }
 
-#title {
+.title {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -60,7 +60,7 @@
         }
 }
 
-#button_order-section {
+.button_order-section {
     display: flex;
     justify-content: center;
     margin-bottom: 5rem;

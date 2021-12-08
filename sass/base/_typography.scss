@@ -18,7 +18,7 @@ footer {
         }
 }
 
-#title_explore {
+.title_explore {
     h1 {
         font-size: 1.5rem;
         font-weight: bolder;
@@ -29,7 +29,7 @@ footer {
     }
 }
 
-#using_app {
+.using_app {
     h2 {
         font-size: 1.3rem;
         font-weight: bolder;
@@ -39,7 +39,7 @@ footer {
     }
 }
 
-#figures-index {
+.figures-index {
     h2 {
         font-size: 1.3rem;
         font-weight: bolder;
@@ -54,7 +54,7 @@ footer {
     } 
 }
 
-#menu {
+.menu {
     h1 {
        font-family: $title-logo-font;
        font-size: 1.5rem; 

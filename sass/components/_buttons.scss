@@ -30,7 +30,7 @@
     }
 }
 
-#order-button {
+.order-button {
     @include gradient-button;
     padding: 1rem 3rem;
 }

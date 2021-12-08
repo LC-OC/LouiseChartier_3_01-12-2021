@@ -1,4 +1,4 @@
-#title_explore {
+.title_explore {
     background-color: $clear-gray;
     text-align: center;
     padding: 1rem 2rem;
@@ -10,29 +10,29 @@
         }
 }
 
-#using_app {
+.using_app {
     padding: 3rem 1rem;
-        #using-button-block {
+        .using-button-block {
             display: flex;
             flex-direction: column;
             padding: 1.5rem 0.5rem;
         }
-        #number-one-using-button {
+        .number-one-using-button {
             margin-top: 1.8rem;
             @include number-using-button;
         }
-        #number-two-using-button {
+        .number-two-using-button {
             @include number-using-button;
             margin-top: 7rem;
         }
-        #number-three-using-button {
+        .number-three-using-button {
             @include number-using-button;
             margin-top: 12.4rem;
         }
 
 }
 
-#figures-index {
+.figures-index {
     background-color: $clear-gray;
     padding: 3rem 0.9rem;
     display: flex;
