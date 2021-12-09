@@ -20,13 +20,21 @@
                 flex-direction: row;
                 justify-content: center;
             }
+            @media #{$tablet} {
+                justify-content: center;
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
         }
         .number-one-using-button {
             margin-top: 1.8rem;
             @include number-using-button;
             @media #{$desktop} {
                 margin-top: 2.6rem;
-                margin-right: 60rem;
+                margin-right: 59.9rem;
+            }
+            @media #{$tablet} {
+                margin-right: 22.5rem;
             }
         }
         .number-two-using-button {
@@ -36,6 +44,9 @@
                 margin-top: 2.6rem;
                 margin-right: 17.5rem;
             }
+            @media #{$tablet} {
+                margin-right: 22.5rem;
+            }
         }
         .number-three-using-button {
             @include number-using-button;
@@ -44,6 +55,9 @@
                 margin-top: 2.6rem;
                 margin-right: -23.5rem;
             }
+            @media #{$tablet} {
+                margin-right: 22.5rem;
+                }
         }
 
 }
@@ -55,10 +69,11 @@
     display: flex;
     flex-direction: column;
         @media #{$desktop} {
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-content: center;
+            @include index-figures-other-version;
+        }
+        @media #{$tablet} {
+            @include index-figures-other-version;
+            margin-top: 2rem;
         }
         a {
             text-decoration: none;

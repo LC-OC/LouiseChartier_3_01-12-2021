@@ -7,6 +7,7 @@
             display: flex;
             justify-content: center;
         }
+        
         .icon-map {
             color: $dark-gray;
         }
@@ -23,6 +24,9 @@
             }
             @media #{$desktop} {
                 width: 10%;
+            }
+            @media #{$tablet} {
+                width: 19%;
             }
         }
         ::placeholder {

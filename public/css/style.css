@@ -117,6 +117,12 @@ footer .bold-font {
     margin: 2rem auto;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .explore-button {
+    width: 35%;
+    margin: 2.5rem auto;
+  }
+}
 
 .order-button {
   background: linear-gradient(2deg, #9356dc 1%, #ff79da 90%);
@@ -139,6 +145,11 @@ footer .bold-font {
 @media screen and (min-width: 992px) {
   .using-button {
     margin: 1.5rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .using-button {
+    width: 50%;
   }
 }
 .using-button .using-icon {
@@ -244,6 +255,11 @@ footer .bold-font {
     width: 10%;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .search_bar input {
+    width: 19%;
+  }
+}
 .search_bar ::placeholder {
   color: #313030;
 }
@@ -251,6 +267,11 @@ footer .bold-font {
 footer {
   background-color: #313030;
   padding: 2rem;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  footer {
+    padding-left: 3rem;
+  }
 }
 footer ul {
   padding-top: 1.3rem;
@@ -260,6 +281,11 @@ footer ul {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  footer ul {
+    margin-top: 0.5rem;
   }
 }
 footer i {
@@ -301,6 +327,13 @@ footer .partnership {
     justify-content: center;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .using_app .using-button-block {
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
 .using_app .number-one-using-button {
   margin-top: 1.8rem;
   position: absolute;
@@ -316,7 +349,12 @@ footer .partnership {
 @media screen and (min-width: 992px) {
   .using_app .number-one-using-button {
     margin-top: 2.6rem;
-    margin-right: 60rem;
+    margin-right: 59.9rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .using_app .number-one-using-button {
+    margin-right: 22.5rem;
   }
 }
 .using_app .number-two-using-button {
@@ -337,6 +375,11 @@ footer .partnership {
     margin-right: 17.5rem;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .using_app .number-two-using-button {
+    margin-right: 22.5rem;
+  }
+}
 .using_app .number-three-using-button {
   position: absolute;
   background-color: #9356DC;
@@ -355,6 +398,11 @@ footer .partnership {
     margin-right: -23.5rem;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .using_app .number-three-using-button {
+    margin-right: 22.5rem;
+  }
+}
 
 .figures-index {
   background-color: #fcf8f8;
@@ -370,6 +418,15 @@ footer .partnership {
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .figures-index .zone-figures-index {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    margin-top: 2rem;
   }
 }
 .figures-index .zone-figures-index a {
@@ -544,7 +601,7 @@ footer .partnership {
 
 .text-zone-mentions-legales {
   margin-top: 0.1rem;
-  background-color: #ebe8e8;
+  background-color: #fcf8f8;
   padding: 2rem 1rem;
 }
 @media screen and (min-width: 992px) {

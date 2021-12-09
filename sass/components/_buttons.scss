@@ -11,6 +11,10 @@
         width: 20%;
         margin: 2rem auto;
     }
+    @media #{$tablet} {
+        width: 35%;
+        margin: 2.5rem auto;
+    }
 }
 
 .order-button {
@@ -28,6 +32,9 @@
     box-shadow: $box-shadow;
     @media #{$desktop} {
         margin: 1.5rem;
+    }
+    @media #{$tablet} {
+        width: 50%;
     }
     .using-icon {
         font-size: 1.1rem;

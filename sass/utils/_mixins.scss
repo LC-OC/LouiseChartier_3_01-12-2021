@@ -23,3 +23,10 @@
     padding: 0.4rem;
 }
 
+@mixin index-figures-other-version {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+

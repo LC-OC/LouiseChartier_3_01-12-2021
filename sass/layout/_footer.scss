@@ -1,13 +1,19 @@
 footer {
     background-color: $dark-gray;
     padding: 2rem;
+    @media #{$tablet} {
+        padding-left: 3rem;
+    }
     ul {
         padding-top: 1.3rem;
         @media #{$desktop} {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-    }
+        }
+        @media #{$tablet} {
+            margin-top: 0.5rem;
+        }
     }
 
     i {
