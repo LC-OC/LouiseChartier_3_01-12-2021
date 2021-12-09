@@ -133,6 +133,11 @@ footer .bold-font {
   padding: 1rem 3rem;
   border: none;
 }
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .order-button {
+    width: 35%;
+  }
+}
 
 .using-button {
   background-color: #fcf8f8;
@@ -502,6 +507,11 @@ footer .partnership {
     height: 20rem;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .image-background {
+    height: 15rem;
+  }
+}
 .image-background .background-img {
   width: 100%;
   object-fit: cover;
@@ -512,9 +522,20 @@ footer .partnership {
     object-position: 50% 70%;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .image-background .background-img {
+    height: 22rem;
+    object-position: 50% 80%;
+  }
+}
 @media screen and (min-width: 992px) {
   .image-background .note-enchantee-img {
     object-position: unset;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .image-background .note-enchantee-img {
+    object-position: 50% 60%;
   }
 }
 
@@ -535,6 +556,11 @@ footer .partnership {
 @media screen and (min-width: 992px) {
   .title {
     margin: 1rem;
+    text-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .title {
     text-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
   }
 }

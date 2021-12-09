@@ -21,6 +21,9 @@
     @include gradient-button;
     padding: 1rem 3rem;
     border: none;
+    @media #{$tablet} {
+        width: 35%;
+    }
 }
 
 .using-button {
