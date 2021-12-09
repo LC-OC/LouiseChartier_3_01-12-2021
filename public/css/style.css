@@ -475,7 +475,7 @@ footer .partnership {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: flex-star;
+  align-items: center;
 }
 .figures-index .zone-figures-index .figures-restaurants figcaption h3 {
   padding-bottom: 0.5rem;
