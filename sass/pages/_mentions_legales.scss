@@ -2,8 +2,12 @@
     margin-top: 0.1rem;
     background-color: $light-gray;
     padding: 2rem 1rem;
+    @media #{$desktop} {
+        padding: 3.5rem;
+    }
     h1 {
         margin-bottom: 1.5rem;
+        text-shadow: $box-shadow;
     }
     p {
         margin-bottom: 1rem;
