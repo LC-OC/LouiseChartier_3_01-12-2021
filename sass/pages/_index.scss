@@ -69,7 +69,10 @@
     display: flex;
     flex-direction: column;
         @media #{$desktop} {
+            width: 90%;
+            margin: auto;
             @include index-figures-other-version;
+            
         }
         @media #{$tablet} {
             @include index-figures-other-version;

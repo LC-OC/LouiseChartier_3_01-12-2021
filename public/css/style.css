@@ -419,6 +419,8 @@ footer .partnership {
 }
 @media screen and (min-width: 992px) {
   .figures-index .zone-figures-index {
+    width: 90%;
+    margin: auto;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
