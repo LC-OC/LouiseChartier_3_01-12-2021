@@ -186,6 +186,15 @@ footer .bold-font {
   padding: 1rem 3rem;
 }
 
+.heart-icon {
+  transform: scale(1);
+  transition-property: transform;
+  transition-duration: 400ms;
+}
+.heart-icon:active {
+  transform: scale(1.15);
+}
+
 /* Logo */
 .index-header {
   background-color: #ffffff;
@@ -591,6 +600,7 @@ footer .partnership {
 
 .menu_items {
   margin-bottom: 2.5rem;
+  cursor: pointer;
 }
 .menu_items h2 {
   margin-bottom: 1.8rem;
@@ -627,6 +637,67 @@ footer .partnership {
   margin-bottom: 5rem;
 }
 
+/* Items menu animation test*/
+.one {
+  animation: animation-menu 3s;
+  animation-delay: -500ms;
+}
+
+.two {
+  animation: animation-menu 3s;
+  animation-delay: -300ms;
+}
+
+.three {
+  animation: animation-menu 3s;
+  animation-delay: 0ms;
+}
+
+@keyframes animation-menu {
+  0% {
+    opacity: 0;
+    transform: translate(0, 2rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+/* ----------- */
+.animation-test-check {
+  width: 4rem;
+  text-align: center;
+  background-color: #99E2D0;
+}
+.animation-test-check .check-icon {
+  color: #ffffff;
+}
+.animation-test-check:active {
+  display: block;
+  animation: check-animation 500ms;
+}
+.animation-test-check:active .check-icon {
+  animation: rotation 500ms linear;
+}
+
+@keyframes check-animation {
+  0% {
+    opacity: 0;
+    transform: translate(2rem, 0);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(359deg);
+  }
+}
+/* test heart */
 .text-zone-mentions-legales {
   margin-top: 0.1rem;
   background-color: #fcf8f8;

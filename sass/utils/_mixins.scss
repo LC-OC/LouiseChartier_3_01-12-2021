@@ -30,3 +30,6 @@
     align-content: center;
 }
 
+@mixin animation-items-menu {
+    animation: animation-menu 3s;
+}
