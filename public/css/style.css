@@ -186,13 +186,9 @@ footer .bold-font {
   padding: 1rem 3rem;
 }
 
-.heart-icon {
-  transform: scale(1);
-  transition-property: transform;
-  transition-duration: 400ms;
-}
 .heart-icon:active {
-  transform: scale(1.15);
+  transform: scale(0);
+  animation: transform 1s ease-out;
 }
 
 /* Logo */
@@ -578,6 +574,7 @@ footer .partnership {
 .title .heart-icon {
   font-size: 1.5rem;
   color: #313030;
+  position: absolute;
 }
 @media screen and (min-width: 992px) {
   .title .heart-icon {
@@ -680,24 +677,23 @@ footer .partnership {
   animation: rotation 500ms linear;
 }
 
-@keyframes check-animation {
-  0% {
-    opacity: 0;
-    transform: translate(2rem, 0);
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes rotation {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(359deg);
-  }
-}
 /* test heart */
+.invisible-element {
+  margin: auto;
+  transition: transform 330ms ease-in-out;
+  transform: scale(0);
+}
+.invisible-element .heart-invisible {
+  color: blueviolet;
+  font-size: 1.6rem;
+  margin-top: -0.1rem;
+}
+
+.block:active + .invisible-element {
+  transform: scale(1);
+  display: block;
+}
+
 .text-zone-mentions-legales {
   margin-top: 0.1rem;
   background-color: #fcf8f8;

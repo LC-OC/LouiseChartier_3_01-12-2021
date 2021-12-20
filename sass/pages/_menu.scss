@@ -55,6 +55,7 @@
         .heart-icon {
             font-size: 1.5rem;
             color: $dark-gray;
+            position: absolute;
             @media #{$desktop} {
                 font-size: 2rem;
             }
@@ -160,25 +161,30 @@
     }
 }
 
-@keyframes check-animation {
-    0% {
-        opacity: 0;
-        transform: translate(2rem, 0);
-    }
 
-    100% {
-        opacity: 1;
-    }
-}
-
-@keyframes rotation {
-    0% {
-        transform: rotate(0deg);
-      }
-      100% {
-        transform: rotate(359deg);
-      }
-}
 
 /* test heart */
+
+
+
+
+.invisible-element {
+    margin: auto;
+    transition: transform 330ms ease-in-out;
+    transform: scale(0);
+    .heart-invisible {
+    color: blueviolet;
+    font-size: 1.6rem;
+    margin-top: -0.1rem;
+}
+}
+
+
+.block:active + .invisible-element {
+    transform: scale(1);
+    display: block;
+    
+}
+
+
 
