@@ -205,6 +205,30 @@ footer .bold-font {
     opacity: 0;
   }
 }
+/* heart-animation */
+.invisible-element {
+  margin: auto;
+  transform-origin: bottom center;
+  transition: transform 500ms ease-in-out;
+  transform: scale(0);
+}
+.invisible-element .heart-invisible {
+  color: blueviolet;
+  font-size: 1.6rem;
+  margin-top: -0.1rem;
+}
+@media screen and (min-width: 992px) {
+  .invisible-element .heart-invisible {
+    margin-top: -0.1rem;
+    font-size: 2rem;
+  }
+}
+
+.block:active + .invisible-element {
+  transform: scale(1);
+  display: block;
+}
+
 /* Logo */
 .index-header {
   background-color: #ffffff;
@@ -710,18 +734,39 @@ footer .partnership {
   width: 4rem;
   text-align: center;
   background-color: #99E2D0;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-top-right-radius: 30%;
+  border-bottom-right-radius: 30%;
 }
 .animation-test-check .check-icon {
   color: #ffffff;
 }
-.animation-test-check:active {
+.animation-test-check:hover {
   display: block;
   animation: check-animation 500ms;
 }
-.animation-test-check:active .check-icon {
+.animation-test-check:hover .check-icon {
   animation: rotation 500ms linear;
 }
 
+@keyframes check-animation {
+  0% {
+    opacity: 0;
+    transform: translate(2rem, 0);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(359deg);
+  }
+}
 /* test heart */
 .invisible-element {
   margin: auto;

@@ -22,3 +22,28 @@
     }
 }
 
+/* heart-animation */
+
+.invisible-element {
+    margin: auto;
+    transform-origin: bottom center;
+    transition: transform 500ms ease-in-out;
+    transform: scale(0);
+    .heart-invisible {
+        color: blueviolet;
+        font-size: 1.6rem;
+        margin-top: -0.1rem;
+        @media #{$desktop} {
+            margin-top: -0.1rem;
+            font-size: 2rem;
+        }
+    
+    }
+}
+
+.block:active + .invisible-element {
+    transform: scale(1);
+    display: block;
+    
+}
+

@@ -148,10 +148,14 @@
     width: 4rem;
     text-align: center;
     background-color: $color-tertiary;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-top-right-radius: 30%;
+    border-bottom-right-radius: 30%;
     .check-icon {
         color: $white;
     }
-    &:active {
+    &:hover {
         display: block;
         animation: check-animation 500ms;
         .check-icon {
@@ -159,6 +163,27 @@
         }
         
     }
+}
+
+
+@keyframes check-animation {
+    0% {
+        opacity: 0;
+        transform: translate(2rem, 0);
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(359deg);
+      }
 }
 
 
