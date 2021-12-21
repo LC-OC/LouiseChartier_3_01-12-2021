@@ -187,10 +187,24 @@ footer .bold-font {
 }
 
 .heart-icon:active {
+  animation: test-animation 50ms ease-out;
   transform: scale(0);
-  animation: transform 1s ease-out;
 }
 
+@keyframes test-animation {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(0.5);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(0);
+    opacity: 0;
+  }
+}
 /* Logo */
 .index-header {
   background-color: #ffffff;
@@ -680,7 +694,8 @@ footer .partnership {
 /* test heart */
 .invisible-element {
   margin: auto;
-  transition: transform 330ms ease-in-out;
+  transform-origin: bottom center;
+  transition: transform 500ms ease-in-out;
   transform: scale(0);
 }
 .invisible-element .heart-invisible {

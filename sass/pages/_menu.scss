@@ -170,13 +170,15 @@
 
 .invisible-element {
     margin: auto;
-    transition: transform 330ms ease-in-out;
+    transform-origin: bottom center;
+    transition: transform 500ms ease-in-out;
     transform: scale(0);
     .heart-invisible {
     color: blueviolet;
     font-size: 1.6rem;
     margin-top: -0.1rem;
-}
+    
+    }
 }
 
 
