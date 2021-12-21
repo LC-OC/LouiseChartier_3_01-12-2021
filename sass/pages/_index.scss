@@ -31,7 +31,7 @@
             @include number-using-button;
             @media #{$desktop} {
                 margin-top: 2.6rem;
-                margin-right: 59.9rem;
+                margin-right: 59.8rem;
             }
             @media #{$tablet} {
                 margin-right: 22.5rem;
@@ -118,13 +118,8 @@
                     h3 {
                         padding-bottom: 0.5rem;
                     }
-                    .heart-icon {
-                        font-size: 1.5rem;
-                        color: $gray-icon
-                }
-        }
-    }    
-    }
+        }    
+}
     .new {
         position: absolute;
         background-color: $color-tertiary;
@@ -137,4 +132,40 @@
         }
 
         
+}
+}
+
+/* --- Heart Animation -- */
+
+.heart-icon {
+    font-size: 1.5rem;
+    color: $gray-icon;
+    position: absolute;
+    margin-right: -1rem;
+        @media #{$desktop} {
+            font-size: 1.6rem;
+        }
+}
+
+
+.invisible-element-index {
+    margin: auto;
+    transform-origin: bottom center;
+    transition: transform 500ms ease-in-out;
+    transform: scale(0);
+    .heart-invisible-index {
+    color: blueviolet;
+    font-size: 1.6rem;
+    margin-top: -0.2rem;
+    @media #{$desktop} {
+        margin-top: -0.1rem;
+    }
+    }
+}
+
+
+.block-index:active + .invisible-element-index {
+    transform: scale(1);
+    display: block;
+    
 }

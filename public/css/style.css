@@ -373,7 +373,7 @@ footer .partnership {
 @media screen and (min-width: 992px) {
   .using_app .number-one-using-button {
     margin-top: 2.6rem;
-    margin-right: 59.9rem;
+    margin-right: 59.8rem;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
@@ -501,11 +501,7 @@ footer .partnership {
 .figures-index .zone-figures-index .figures-restaurants figcaption h3 {
   padding-bottom: 0.5rem;
 }
-.figures-index .zone-figures-index .figures-restaurants figcaption .heart-icon {
-  font-size: 1.5rem;
-  color: #818181;
-}
-.figures-index .new {
+.figures-index .zone-figures-index .new {
   position: absolute;
   background-color: #99E2D0;
   padding: 0.5rem 0.8rem;
@@ -513,9 +509,44 @@ footer .partnership {
   margin-top: 0.8rem;
 }
 @media screen and (min-width: 992px) {
-  .figures-index .new {
+  .figures-index .zone-figures-index .new {
     margin-left: 19.5rem;
   }
+}
+
+/* --- Heart Animation -- */
+.heart-icon {
+  font-size: 1.5rem;
+  color: #818181;
+  position: absolute;
+  margin-right: -1rem;
+}
+@media screen and (min-width: 992px) {
+  .heart-icon {
+    font-size: 1.6rem;
+  }
+}
+
+.invisible-element-index {
+  margin: auto;
+  transform-origin: bottom center;
+  transition: transform 500ms ease-in-out;
+  transform: scale(0);
+}
+.invisible-element-index .heart-invisible-index {
+  color: blueviolet;
+  font-size: 1.6rem;
+  margin-top: -0.2rem;
+}
+@media screen and (min-width: 992px) {
+  .invisible-element-index .heart-invisible-index {
+    margin-top: -0.1rem;
+  }
+}
+
+.block-index:active + .invisible-element-index {
+  transform: scale(1);
+  display: block;
 }
 
 .image-background {
@@ -702,6 +733,12 @@ footer .partnership {
   color: blueviolet;
   font-size: 1.6rem;
   margin-top: -0.1rem;
+}
+@media screen and (min-width: 992px) {
+  .invisible-element .heart-invisible {
+    margin-top: -0.1rem;
+    font-size: 2rem;
+  }
 }
 
 .block:active + .invisible-element {
