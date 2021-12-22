@@ -58,6 +58,7 @@
             position: absolute;
             @media #{$desktop} {
                 font-size: 2rem;
+
             }
         }
 
@@ -78,16 +79,17 @@
 
 .menu_items {
     margin-bottom: 2.5rem;
-    cursor: pointer;
         h2 {
            margin-bottom: 1.8rem;     
         }
         .food_card {
+            cursor: pointer;
             background-color: $white;
             margin: 0.8rem 0;
             padding: 1rem;
             border-radius: 1rem;
             box-shadow: $box-shadow;
+            
             @media #{$desktop} {
                 width: 20rem;
             }
@@ -128,7 +130,12 @@
 
 .three {
     @include animation-items-menu;
-    animation-delay: -00ms;
+    animation-delay: -100ms;
+}
+
+.four {
+    @include animation-items-menu;
+    animation-delay: -50ms;
 }
 
 @keyframes animation-menu {
@@ -144,20 +151,19 @@
 
 /* ----------- */
 
+
 .animation-test-check {
     width: 4rem;
     text-align: center;
     background-color: $color-tertiary;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    border-top-right-radius: 30%;
-    border-bottom-right-radius: 30%;
+    transform-origin: right center;
     .check-icon {
         color: $white;
     }
-    &:hover {
+    &:active {
         display: block;
         animation: check-animation 500ms;
+        transform: scale(1);
         .check-icon {
             animation: rotation 500ms linear;
         }
@@ -165,17 +171,18 @@
     }
 }
 
-
+/*
 @keyframes check-animation {
     0% {
         opacity: 0;
-        transform: translate(2rem, 0);
+        scale: 0;
     }
 
     100% {
         opacity: 1;
+        scale: 1;
     }
-}
+} */
 
 @keyframes rotation {
     0% {
@@ -185,7 +192,6 @@
         transform: rotate(359deg);
       }
 }
-
 
 
 /* test heart */

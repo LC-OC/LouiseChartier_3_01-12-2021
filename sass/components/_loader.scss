@@ -1,0 +1,59 @@
+.loading-spinning {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: $white;
+  height: 332%;
+  width: 100%;
+  animation: hide 3s linear 1 forwards;
+  @media #{$desktop} {
+    height: 227%;
+  }
+  @media #{$tablet} {
+    height: 165%;
+  }
+  .loader {
+    margin: 50% 1rem 0 1rem;
+    padding: 1rem;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    animation: dot-animation 3s linear forwards;
+    @media #{$desktop} {
+      margin: 25% 1rem 0 1rem;
+    }
+}
+}
+
+
+
+
+@keyframes dot-animation {
+  0% {
+
+    box-shadow: 0 0 0 0 rgba(221, 121, 252, 0.4);
+    background-color: $color-primary;
+  }
+  60% {
+      box-shadow: 0 0 0 10px rgba(221, 121, 252, 0.4);
+      background-color: $color-secondary;
+  }
+  100% {
+
+      box-shadow: 0 0 0 0 rgba(221, 121, 252, 0.4);
+      background-color: $color-primary;
+  }
+
+  
+}
+
+
+@keyframes hide {
+  from {
+    opacity: 1;
+  }
+  to {
+      opacity: 0;
+  }
+}

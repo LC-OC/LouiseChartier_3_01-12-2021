@@ -104,6 +104,7 @@ footer .bold-font {
   font-size: 1rem;
   color: #ffffff;
   box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
   padding: 1.1rem 1.6rem;
   margin: 2rem;
 }
@@ -130,6 +131,7 @@ footer .bold-font {
   font-size: 1rem;
   color: #ffffff;
   box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
   padding: 1rem 3rem;
   border: none;
 }
@@ -183,6 +185,7 @@ footer .bold-font {
   font-size: 1rem;
   color: #ffffff;
   box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
   padding: 1rem 3rem;
 }
 
@@ -229,6 +232,62 @@ footer .bold-font {
   display: block;
 }
 
+.loading-spinning {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #ffffff;
+  height: 332%;
+  width: 100%;
+  animation: hide 3s linear 1 forwards;
+}
+@media screen and (min-width: 992px) {
+  .loading-spinning {
+    height: 227%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .loading-spinning {
+    height: 165%;
+  }
+}
+.loading-spinning .loader {
+  margin: 50% 1rem 0 1rem;
+  padding: 1rem;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  animation: dot-animation 3s linear forwards;
+}
+@media screen and (min-width: 992px) {
+  .loading-spinning .loader {
+    margin: 25% 1rem 0 1rem;
+  }
+}
+
+@keyframes dot-animation {
+  0% {
+    box-shadow: 0 0 0 0 rgba(221, 121, 252, 0.4);
+    background-color: #9356DC;
+  }
+  60% {
+    box-shadow: 0 0 0 10px rgba(221, 121, 252, 0.4);
+    background-color: #FF79DA;
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(221, 121, 252, 0.4);
+    background-color: #9356DC;
+  }
+}
+@keyframes hide {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
 /* Logo */
 .index-header {
   background-color: #ffffff;
@@ -564,7 +623,7 @@ footer .partnership {
 }
 @media screen and (min-width: 992px) {
   .invisible-element-index .heart-invisible-index {
-    margin-top: -0.1rem;
+    margin-top: -0.2rem;
   }
 }
 
@@ -666,12 +725,12 @@ footer .partnership {
 
 .menu_items {
   margin-bottom: 2.5rem;
-  cursor: pointer;
 }
 .menu_items h2 {
   margin-bottom: 1.8rem;
 }
 .menu_items .food_card {
+  cursor: pointer;
   background-color: #ffffff;
   margin: 0.8rem 0;
   padding: 1rem;
@@ -716,7 +775,12 @@ footer .partnership {
 
 .three {
   animation: animation-menu 3s;
-  animation-delay: 0ms;
+  animation-delay: -100ms;
+}
+
+.four {
+  animation: animation-menu 3s;
+  animation-delay: -50ms;
 }
 
 @keyframes animation-menu {
@@ -734,31 +798,32 @@ footer .partnership {
   width: 4rem;
   text-align: center;
   background-color: #99E2D0;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  border-top-right-radius: 30%;
-  border-bottom-right-radius: 30%;
+  transform-origin: right center;
 }
 .animation-test-check .check-icon {
   color: #ffffff;
 }
-.animation-test-check:hover {
+.animation-test-check:active {
   display: block;
   animation: check-animation 500ms;
+  transform: scale(1);
 }
-.animation-test-check:hover .check-icon {
+.animation-test-check:active .check-icon {
   animation: rotation 500ms linear;
 }
 
+/*
 @keyframes check-animation {
-  0% {
-    opacity: 0;
-    transform: translate(2rem, 0);
-  }
-  100% {
-    opacity: 1;
-  }
-}
+    0% {
+        opacity: 0;
+        scale: 0;
+    }
+
+    100% {
+        opacity: 1;
+        scale: 1;
+    }
+} */
 @keyframes rotation {
   0% {
     transform: rotate(0deg);
