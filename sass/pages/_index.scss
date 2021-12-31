@@ -1,3 +1,4 @@
+
 .title_explore {
     background-color: $clear-gray;
     text-align: center;
@@ -30,8 +31,8 @@
             margin-top: 1.8rem;
             @include number-using-button;
             @media #{$desktop} {
-                margin-top: 2.6rem;
-                margin-right: 59.8rem;
+                margin-top: 2.5rem;
+                margin-right: -2rem;
             }
             @media #{$tablet} {
                 margin-right: 22.5rem;
@@ -41,8 +42,8 @@
             @include number-using-button;
             margin-top: 7rem;
             @media #{$desktop} {
-                margin-top: 2.6rem;
-                margin-right: 17.5rem;
+                margin-top: 2.5rem;
+                margin-right: -2rem;
             }
             @media #{$tablet} {
                 margin-right: 22.5rem;
@@ -52,8 +53,8 @@
             @include number-using-button;
             margin-top: 12.4rem;
             @media #{$desktop} {
-                margin-top: 2.6rem;
-                margin-right: -23.5rem;
+                margin-top: 2.5rem;
+                margin-right: -2rem;
             }
             @media #{$tablet} {
                 margin-right: 22.5rem;
@@ -126,6 +127,7 @@
         padding: 0.5rem 0.8rem;
         margin-left: 14.5rem;
         margin-top: 0.8rem;
+        animation: opacity--visibility-index 3s linear 1 forwards;
         @media #{$desktop} {
             margin-left: 19.5rem;
         }
@@ -157,6 +159,7 @@
     color: blueviolet;
     font-size: 1.6rem;
     margin-top: -0.2rem;
+    animation: opacity--visibility-index 3s linear 1 forwards;
     @media #{$desktop} {
         margin-top: -0.2rem;
     }
@@ -168,4 +171,8 @@
     transform: scale(1);
     display: block;
     
+}
+
+.heart-index {
+    animation: opacity--visibility-index 3s linear 1 forwards;
 }

@@ -1,0 +1,90 @@
+/* Loader Spinner animation */
+
+@keyframes dot-animation {
+    0% {
+  
+      box-shadow: 0 0 0 0 rgba(221, 121, 252, 0.4);
+      background-color: $color-primary;
+    }
+    60% {
+        box-shadow: 0 0 0 10px rgba(221, 121, 252, 0.4);
+        background-color: $color-secondary;
+    }
+    100% {
+  
+        box-shadow: 0 0 0 0 rgba(221, 121, 252, 0.4);
+        background-color: $color-primary;
+    }
+  
+    
+  }
+  
+@keyframes opacity--visibility-loader {
+    0% {
+      opacity: 1;
+      visibility: visible;
+    }
+  
+    50% {
+      opacity: 1;
+      visibility: visible;
+    }
+  
+    90% {
+      opacity: 0.5;
+      visibility: visible;
+    }
+  
+    100% {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+
+/* Menu animation */
+
+@keyframes animation-menu {
+    0% {
+        opacity: 0;
+        transform: translate(0,2rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+
+/* Index animation elements during loader */
+
+@keyframes opacity--visibility-index {
+    0% {
+        opacity: 0;
+        visibility: hidden;
+      }
+    
+      50% {
+        opacity: 0;
+        visibility: hidden;
+      }
+    
+      70% {
+        opacity: 0.5;
+        visibility: visible;
+      }
+    
+      100% {
+        opacity: 1;
+        visibility: visible;
+      }
+}
+
+/* Check rotation menu */
+
+@keyframes rotation {
+  0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(359deg);
+    }
+}

@@ -85,8 +85,9 @@
         .food_card {
             cursor: pointer;
             background-color: $white;
+            height: 4rem;
             margin: 0.8rem 0;
-            padding: 1rem;
+            padding: 0 0 0 1rem;
             border-radius: 1rem;
             box-shadow: $box-shadow;
             
@@ -138,90 +139,52 @@
     animation-delay: -50ms;
 }
 
-@keyframes animation-menu {
-    0% {
-        opacity: 0;
-        transform: translate(0,2rem);
-    }
-    100% {
-        opacity: 1;
-        transform: translate(0, 0);
+
+
+/* ----- CHECK FOOD ITEMS ANIMATION ------ */
+
+.animation-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem 0 1rem 1rem;
+    .text-element-card {
+        width: 90%;
+        padding-top: 1rem;
+        padding-bottom: 0.5rem;
+        transition: width 2s;
     }
 }
 
-/* ----------- */
+.block-check-animation {
+    visibility: hidden;
+    .animation-test-check {
+        width: 0.1rem;
+        height: 100%;
+        border-radius: 0 0.5rem 0.5rem 0;
+        text-align: center;
+        background-color: $color-tertiary;
+        transition: width 2s;
+        .check-icon {
+            color: $white;
+            margin-top: 1.4rem;
+            }
+        }
 
+}
 
-.animation-test-check {
-    width: 4rem;
-    text-align: center;
-    background-color: $color-tertiary;
-    transform-origin: right center;
-    .check-icon {
-        color: $white;
+.animation-card:hover {
+    .text-element-card {
+        width: 80%;
     }
-    &:active {
-        display: block;
-        animation: check-animation 500ms;
-        transform: scale(1);
+    .block-check-animation {
+        visibility: visible;
+    }
+    .animation-test-check {
+        width: 3rem;
         .check-icon {
             animation: rotation 500ms linear;
         }
-        
     }
 }
-
-/*
-@keyframes check-animation {
-    0% {
-        opacity: 0;
-        scale: 0;
-    }
-
-    100% {
-        opacity: 1;
-        scale: 1;
-    }
-} */
-
-@keyframes rotation {
-    0% {
-        transform: rotate(0deg);
-      }
-      100% {
-        transform: rotate(359deg);
-      }
-}
-
-
-/* test heart */
-
-
-
-
-.invisible-element {
-    margin: auto;
-    transform-origin: bottom center;
-    transition: transform 500ms ease-in-out;
-    transform: scale(0);
-    .heart-invisible {
-        color: blueviolet;
-        font-size: 1.6rem;
-        margin-top: -0.1rem;
-        @media #{$desktop} {
-            margin-top: -0.1rem;
-            font-size: 2rem;
-        }
-    
-    }
-}
-
-
-.block:active + .invisible-element {
-    transform: scale(1);
-    display: block;
-    
-}
-
-
 
