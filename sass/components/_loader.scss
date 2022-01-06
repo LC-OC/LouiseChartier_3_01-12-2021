@@ -13,6 +13,9 @@
   @media #{$tablet} {
     height: 165%;
   }
+  @media #{$tablet_rotate} {
+    height: 201%;
+  }
   .loader {
     margin: 50% 1rem 0 1rem;
     padding: 1rem;

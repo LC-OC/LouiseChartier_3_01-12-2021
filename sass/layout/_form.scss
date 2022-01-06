@@ -28,6 +28,12 @@
             @media #{$tablet} {
                 width: 19%;
             }
+            @media #{$tablet_rotate} {
+                width: 11%;
+            }
+            @media #{$mobile_rotate} {
+                width: 17%;
+            }
         }
         ::placeholder {
             color: $dark-gray;

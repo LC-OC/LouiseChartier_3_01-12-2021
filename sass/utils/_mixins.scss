@@ -13,7 +13,7 @@
 }
 
 @mixin number-using-button {
-    position: sticky;
+    position: absolute;
     background-color: $color-primary;
     width: 0.7rem;
     height: 0.7rem;
@@ -23,6 +23,9 @@
     border-radius: 50%;
     padding: 0.4rem;
     animation: opacity--visibility-index 3s linear 1 forwards;
+    @media #{$desktop} {
+      position: sticky;
+    }
 }
 
 @mixin index-figures-other-version {

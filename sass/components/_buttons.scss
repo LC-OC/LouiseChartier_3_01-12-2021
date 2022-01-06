@@ -15,6 +15,14 @@
         width: 35%;
         margin: 2.5rem auto;
     }
+    @media #{$mobile_rotate} {
+        width: 35%;
+        margin: 2.5rem auto;
+    }
+    @media #{$tablet_rotate} {
+        width: 35%;
+        margin: 2.5rem auto;
+    }
 }
 
 .order-button {
@@ -23,6 +31,11 @@
     border: none;
     @media #{$tablet} {
         width: 35%;
+    }
+    @media #{$tablet_rotate} {
+        width: 35%;
+        padding: 1.5rem 3rem;
+        margin-top: 2rem;
     }
 }
 

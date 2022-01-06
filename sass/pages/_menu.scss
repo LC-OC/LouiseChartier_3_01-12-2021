@@ -8,6 +8,12 @@
     @media #{$tablet} {
         height: 15rem;
     }
+    @media #{$tablet_rotate} {
+        height: 15rem;
+    }
+    @media #{$mobile_rotate} {
+        height: 15rem;
+    }
     .background-img {
         width: 100%;
         object-fit: cover;
@@ -19,6 +25,14 @@
             height: 22rem;
             object-position: 50% 80%;
         }
+        @media #{$mobile_rotate} {
+            height: 22rem;
+            object-position: 50% 80%;
+        }
+        @media #{$tablet_rotate} {
+            height: 22rem;
+            object-position: 50% 80%;
+        }
     }
     /*Unset object-position "Note Enchantée" img for desktop version */
      .note-enchantee-img {
@@ -26,7 +40,10 @@
             object-position: unset;
         }
         @media #{$tablet} {
-            object-position: 50% 60%;;
+            object-position: 50% 60%;
+        }
+        @media #{$mobile_rotate} {
+            object-position: 50% 70%;
         }
 
     }
@@ -173,7 +190,7 @@
 
 }
 
-.animation-card:hover {
+.animation-card:active {
     .text-element-card {
         width: 80%;
     }
@@ -183,7 +200,7 @@
     .animation-test-check {
         width: 3rem;
         .check-icon {
-            animation: rotation 500ms linear;
+            animation: rotation 1s linear;
         }
     }
 }

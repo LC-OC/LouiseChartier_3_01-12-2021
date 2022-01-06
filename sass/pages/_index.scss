@@ -1,4 +1,5 @@
 
+
 .title_explore {
     background-color: $clear-gray;
     text-align: center;
@@ -26,6 +27,10 @@
                 flex-direction: row;
                 flex-wrap: wrap;
             }
+            @media #{$tablet_rotate} {
+                flex-direction: row;
+                justify-content: center;
+            }
         }
         .number-one-using-button {
             margin-top: 1.8rem;
@@ -36,6 +41,10 @@
             }
             @media #{$tablet} {
                 margin-right: 22.5rem;
+            }
+            @media #{$tablet_rotate} {
+                margin-top: 1.8rem;
+                margin-left: -57rem;
             }
         }
         .number-two-using-button {
@@ -48,6 +57,10 @@
             @media #{$tablet} {
                 margin-right: 22.5rem;
             }
+            @media #{$tablet_rotate} {
+                margin-top: 1.8rem;
+                margin-left: -17.5rem;
+            }
         }
         .number-three-using-button {
             @include number-using-button;
@@ -58,7 +71,11 @@
             }
             @media #{$tablet} {
                 margin-right: 22.5rem;
-                }
+            }
+            @media #{$tablet_rotate} {
+                margin-top: 1.8rem;
+                margin-left: 21rem;
+            }
         }
 
 }
@@ -79,6 +96,12 @@
             @include index-figures-other-version;
             margin-top: 2rem;
         }
+        @media #{$tablet_rotate} {
+            @include index-figures-other-version;
+        }
+        @media #{$mobile_rotate} {
+            @include index-figures-other-version;
+        }
         a {
             text-decoration: none;
             color: inherit;
@@ -96,28 +119,45 @@
                 height: 9rem;
                 margin: 2rem;
             }
-                .img-restaurant {
-                    width: 20rem;
-                    height: 10rem;
-                    border-radius:  10px 10px 0 0;
-                    object-fit: cover;
-                    object-position: right bottom;
-                    @media #{$desktop} {
-                        width: 25rem;
-                        object-position: center;
-                    }
+            @media #{$mobile_rotate} {
+                width: 16rem;
+                height: 9rem;
+                margin: 1rem;
+            }
+            @media #{$tablet_rotate} {
+                width: 25rem;
+                height: 9rem;
+                margin: 2rem;
+            }
+            .img-restaurant {
+                width: 20rem;
+                height: 10rem;
+                border-radius:  10px 10px 0 0;
+                object-fit: cover;
+                object-position: right bottom;
+                @media #{$desktop} {
+                    width: 25rem;
+                    object-position: center;
                 }
-                .img-note-enchantee {
-                    object-position: 50% 61%;
+                @media #{$mobile_rotate} {
+                    width: 16rem;
                 }
-                figcaption {
-                    padding: 1rem;
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: space-between;
-                    align-items:center;
-                    h3 {
-                        padding-bottom: 0.5rem;
+                @media #{$tablet_rotate} {
+                    width: 25rem;
+                }
+
+            }
+            .img-note-enchantee {
+                object-position: 50% 61%;
+            }
+            figcaption {
+                padding: 1rem;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items:center;
+                h3 {
+                    padding-bottom: 0.5rem;
                     }
         }    
 }
@@ -130,6 +170,9 @@
         animation: opacity--visibility-index 3s linear 1 forwards;
         @media #{$desktop} {
             margin-left: 19.5rem;
+        }
+        @media #{$mobile_rotate} {
+            margin-left: 10.5rem;
         }
         }
 
