@@ -308,6 +308,27 @@ footer .bold-font {
   }
 }
 
+/* Height Loading Spinning for Mozilla*/
+@-moz-document url-prefix() {
+  .loading-spinning {
+    height: 332%;
+  }
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    .loading-spinning {
+      height: 156%;
+    }
+  }
+  @media screen and (min-width: 1081px) {
+    .loading-spinning {
+      height: 209%;
+    }
+  }
+  @media screen and (min-width: 992px) and (max-width: 1080px) {
+    .loading-spinning {
+      height: 183%;
+    }
+  }
+}
 /* Loader Spinner animation */
 @keyframes dot-animation {
   0% {
