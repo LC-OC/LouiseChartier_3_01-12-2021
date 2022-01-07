@@ -77,3 +77,9 @@
     @include gradient-button;
     padding: 1rem 3rem;
 }
+
+.heart-button {
+    text-decoration: none;
+    border: none;
+    background-color: $clear-gray;
+}

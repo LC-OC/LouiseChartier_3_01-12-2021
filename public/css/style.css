@@ -226,25 +226,17 @@ footer .bold-font {
   padding: 1rem 3rem;
 }
 
+.heart-button {
+  text-decoration: none;
+  border: none;
+  background-color: #fcf8f8;
+}
+
 .heart-icon:active {
   animation: heart-animation 50ms ease-out;
   transform: scale(0);
 }
 
-@keyframes animation-heart {
-  0% {
-    transform: scale(1);
-    opacity: 1;
-  }
-  50% {
-    transform: scale(0.5);
-    opacity: 0.5;
-  }
-  100% {
-    transform: scale(0);
-    opacity: 0;
-  }
-}
 /* heart-animation */
 .invisible-element {
   margin: auto;
@@ -255,7 +247,7 @@ footer .bold-font {
 .invisible-element .heart-invisible {
   color: blueviolet;
   font-size: 1.6rem;
-  margin-top: -0.1rem;
+  margin-top: -0.2rem;
 }
 @media screen and (min-width: 1025px) {
   .invisible-element .heart-invisible {
@@ -399,6 +391,21 @@ footer .bold-font {
   }
   100% {
     transform: rotate(359deg);
+  }
+}
+/* Heart Animation */
+@keyframes animation-heart {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(0.5);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(0);
+    opacity: 0;
   }
 }
 /* Logo */
@@ -946,10 +953,12 @@ footer .partnership {
   font-size: 1.5rem;
   color: #313030;
   position: absolute;
+  margin-left: -0.7rem;
 }
 @media screen and (min-width: 1025px) {
   .title .heart-icon {
     font-size: 2rem;
+    margin-left: -1rem;
   }
 }
 
@@ -980,6 +989,7 @@ footer .partnership {
   padding: 0 0 0 1rem;
   border-radius: 1rem;
   box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
 }
 @media screen and (min-width: 1025px) {
   .menu_items .food_card {
@@ -1032,6 +1042,7 @@ footer .partnership {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   padding: 1rem 0 1rem 1rem;
 }
 .animation-card .text-element-card {
@@ -1041,33 +1052,30 @@ footer .partnership {
   transition: width 2s;
 }
 
-.block-check-animation {
-  visibility: hidden;
-}
-.block-check-animation .animation-test-check {
-  width: 0.1rem;
-  height: 100%;
+.animation-test-check {
+  width: 0rem;
+  height: 4rem;
   border-radius: 0 0.5rem 0.5rem 0;
-  text-align: center;
   background-color: #99E2D0;
   transition: width 2s;
+  overflow: hidden;
+  text-align: center;
 }
-.block-check-animation .animation-test-check .check-icon {
+.animation-test-check .check-icon {
+  font-size: 1.3rem;
   color: #ffffff;
   margin-top: 1.4rem;
 }
 
 .animation-card:active .text-element-card {
-  width: 80%;
-}
-.animation-card:active .block-check-animation {
-  visibility: visible;
+  width: 78%;
 }
 .animation-card:active .animation-test-check {
-  width: 3rem;
+  width: 3.5rem;
 }
 .animation-card:active .animation-test-check .check-icon {
-  animation: rotation 1s linear;
+  animation: rotation 1s ease-in-out;
+  animation-iteration-count: 1;
 }
 
 .text-zone-mentions-legales {

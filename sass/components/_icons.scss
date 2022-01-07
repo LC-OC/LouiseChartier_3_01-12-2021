@@ -5,23 +5,6 @@
     }
 } 
 
-@keyframes animation-heart {
-    0% {
-        transform: scale(1);
-        opacity: 1;
-    }
-
-    50% {
-        transform: scale(0.5);
-        opacity: 0.5;
-    }
-
-    100% {
-        transform: scale(0);
-        opacity: 0;
-    }
-}
-
 /* heart-animation */
 
 .invisible-element {
@@ -32,7 +15,7 @@
     .heart-invisible {
         color: blueviolet;
         font-size: 1.6rem;
-        margin-top: -0.1rem;
+        margin-top: -0.2rem;
         @media #{$desktop} {
             margin-top: -0.1rem;
             font-size: 2rem;
