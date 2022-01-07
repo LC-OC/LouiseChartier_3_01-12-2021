@@ -35,6 +35,8 @@
     }
     /*Unset object-position "Note Enchantée" img for desktop version */
      .note-enchantee-img {
+         height: 20rem;
+        object-position: 50% 90%;
         @media #{$desktop} {
             object-position: unset;
         }

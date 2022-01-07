@@ -898,6 +898,10 @@ footer .partnership {
     object-position: 50% 80%;
   }
 }
+.image-background .note-enchantee-img {
+  height: 20rem;
+  object-position: 50% 90%;
+}
 @media screen and (min-width: 1025px) {
   .image-background .note-enchantee-img {
     object-position: unset;
