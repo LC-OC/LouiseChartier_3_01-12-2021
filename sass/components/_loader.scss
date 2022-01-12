@@ -20,23 +20,9 @@
     @media #{$mobile_rotate} {
       margin: 25% 1rem 0 1rem;
     }
+    @media #{$tablet_rotate} {
+      margin: 35% 1rem 0 1rem;
+    }
 }
 }
 
-/* Height Loading Spinning for Mozilla*/
-
-@-moz-document url-prefix() {
-  .loading-spinning { 
-    height: 332%; 
-    @media #{$tablet} {
-      height: 156%;
-    }
-    @media #{$desktop_mozilla} {
-      height: 209%;
-    }
-    @media #{$tablet_rotate_mozilla} {
-      height: 183%;
-    }
-    
-  }
-}

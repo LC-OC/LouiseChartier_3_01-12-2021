@@ -62,7 +62,7 @@
         }
         .number-three-using-button {
             @include number-using-button;
-            margin-top: 12.4rem;
+            margin-top: 12.2rem;
             @media #{$desktop} {
                 margin-top: 2.5rem;
                 margin-right: -2rem;
@@ -75,6 +75,29 @@
                 margin-left: 21rem;
             }
         }
+
+        /* Margin number using button for Mozilla Tablet */
+        @-moz-document url-prefix() {
+            .number-one-using-button {
+                @media #{$tablet} {
+                    margin-right: 24rem;
+                }
+            }
+          }
+        @-moz-document url-prefix() {
+            .number-two-using-button {
+                @media #{$tablet} {
+                    margin-right: 24rem;
+                }
+            }
+          }
+          @-moz-document url-prefix() {
+            .number-three-using-button {
+                @media #{$tablet} {
+                    margin-right: 24rem;
+                }
+            }
+          }
 
 }
 
@@ -171,6 +194,9 @@
         }
         @media #{$mobile_rotate} {
             margin-left: 10.5rem;
+        }
+        @media #{$tablet_rotate} {
+            margin-left: 19rem;
         }
         }
 

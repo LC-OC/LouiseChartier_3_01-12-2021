@@ -289,28 +289,12 @@ footer .bold-font {
     margin: 25% 1rem 0 1rem;
   }
 }
-
-/* Height Loading Spinning for Mozilla*/
-@-moz-document url-prefix() {
-  .loading-spinning {
-    height: 332%;
-  }
-  @media screen and (min-width: 768px) and (max-width: 991px) {
-    .loading-spinning {
-      height: 156%;
-    }
-  }
-  @media screen and (min-width: 1081px) {
-    .loading-spinning {
-      height: 209%;
-    }
-  }
-  @media screen and (min-width: 992px) and (max-width: 1080px) {
-    .loading-spinning {
-      height: 183%;
-    }
+@media screen and (min-width: 992px) and (max-width: 1024px) {
+  .loading-spinning .loader {
+    margin: 35% 1rem 0 1rem;
   }
 }
+
 /* Loader Spinner animation */
 @keyframes dot-animation {
   0% {
@@ -542,6 +526,7 @@ footer .partnership {
 
 .using_app {
   padding: 3rem 1rem;
+  /* Margin number using button for Mozilla Tablet */
 }
 .using_app .using-button-block {
   display: flex;
@@ -648,7 +633,7 @@ footer .partnership {
   border-radius: 50%;
   padding: 0.4rem;
   animation: opacity--visibility-index 3s linear 1 forwards;
-  margin-top: 12.4rem;
+  margin-top: 12.2rem;
 }
 @media screen and (min-width: 1025px) {
   .using_app .number-three-using-button {
@@ -670,6 +655,27 @@ footer .partnership {
   .using_app .number-three-using-button {
     margin-top: 1.8rem;
     margin-left: 21rem;
+  }
+}
+@-moz-document url-prefix() {
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    .using_app .number-one-using-button {
+      margin-right: 24rem;
+    }
+  }
+}
+@-moz-document url-prefix() {
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    .using_app .number-two-using-button {
+      margin-right: 24rem;
+    }
+  }
+}
+@-moz-document url-prefix() {
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    .using_app .number-three-using-button {
+      margin-right: 24rem;
+    }
   }
 }
 
@@ -802,6 +808,11 @@ footer .partnership {
 @media screen and (min-width: 640px) and (max-width: 767px) {
   .figures-index .zone-figures-index .new {
     margin-left: 10.5rem;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1024px) {
+  .figures-index .zone-figures-index .new {
+    margin-left: 19rem;
   }
 }
 
